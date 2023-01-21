@@ -1,0 +1,32 @@
+/* Global/Universal selector */
+* {
+    font-family: sans-serif;
+}
+
+/* HTML Selector tag using elements */
+body {
+    background-color: chartreuse;
+}       
+
+section {
+    background-color: pink;
+}
+
+p{
+    background-color: aquamarine;
+}
+
+span{
+    background-color: crimson;
+}
+
+/* Class selector */
+.sectionTitle {
+    text-decoration: underline;
+}
+
+/* ID selector */
+#specialTitle {
+    background-color: red;
+    text-transform: capitalize;
+}

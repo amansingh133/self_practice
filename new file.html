@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Media tags</title>
+</head>
+
+<body>
+    <!-- Tables -->
+    <table border="1">
+        <caption>Media tags</caption>
+        <thead>
+            <tr>
+                <th colspan="2">
+                    <p>Image</p>
+                </th>
+
+                <th colspan="1">
+                    <p>Audio</p>
+                </th>
+                <th colspan="2">
+                    <p>Video</p>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <p>Internal</p>
+                </td>
+                <td>
+                    <p>External</p>
+                </td>
+                <td>
+                    <p>Internal</p>
+                </td>
+                <td>
+                    <p>Internal</p>
+                </td>
+                <td>
+                    <p>Embed</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="Image 1.jpg" alt="Neon light" height="150px" width="150px">
+                </td>
+                <td>
+                    <img src="https://images.unsplash.com/photo-1561344640-2453889cde5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=367&q=80"
+                        alt="Neon light" height="150px" width="150px">
+                </td>
+                <td>
+                    <audio controls height="150px" width="150px">
+                        <source src="trumpet_wake_up.mp3">
+                    </audio>
+                </td>
+                <td>
+                    <video controls height="150px" width="150px">
+                        <source src="banana.mp4">
+                    </video>
+                </td>
+                <td>
+                    <iframe width="150" height="150" src="https://www.youtube.com/embed/VqCgcpAypFQ"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form method="get" action="#" enctype="multipart/form-data">
+        <textarea name="Your name" cols="30" rows="5">Tell us about yourself</textarea>
+        <hr>
+        <p>Your Fav. color</p>
+        <select>
+            <option>Red</option>
+            <option>Green</option>
+            <option>Blue</option>
+            <option selected>Yellow</option>
+        </select>
+        <hr>
+        <input type="checkbox" name="Places you have visited" /> Goa <br>
+        <input type="checkbox" name="Places you have visited" /> Kerala <br>
+        <input type="checkbox" name="Places you have visited" /> Himachal <br>
+        <hr>
+        <input type="radio" name="Gender"> Male <br>
+        <input type="radio" name="Gender"> Female <br>
+        <input type="radio" name="Gender"> Other <br>
+        <input type="radio" name="Gender"> Prefer not to say <br>
+        <hr>
+        <input type="text"><br>
+        <input type="password"><br>
+        <input type="email"><br>
+        <input type="number"><br>
+        <input type="date"><br>
+        <input type="time"><br>
+        <input type="color"><br>
+        <input type="file"><br>
+        <input type="reset"><br>
+        <input type="submit"><br>
+        <button type="submit">Login </button>
+    </form>
+</body>
+
+</html>
