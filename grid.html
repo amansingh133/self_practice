@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wholePage{
+            display: grid;
+            grid-template-columns: 20% 80%;
+        }
+        #courseCompletion{
+            padding: 0px 0px 0px 0px;
+        }
+
+        #courseCompletion>li{        
+            display: inline-block;
+            list-style: none;
+        }
+        aside{
+            background-color: black;
+            color: white;
+        }
+
+        /* #menu{
+            display:table; text-align:center; margin:0 auto; vertical-align: middle;
+        } */
+
+        #menu>li{
+            list-style: none;
+            padding: 5px;
+            list-style-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4IiB2aWV3Qm94PSIwIDAgMzIgMzIiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgICA8IS0tIEdlbmVyYXRvcjogU2tldGNoIDU1LjIgKDc4MTgxKSAtIGh0dHBzOi8vc2tldGNoYXBwLmNvbSAtLT4KICAgIDx0aXRsZT5EYXNoYm9hcmQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZyBpZD0iRGFzaGJvYXJkIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8cGF0aCBkPSJNOSwxMC41IEM5LDkuNjcxNTcyODggOS42NzE1NzI4OCw5IDEwLjUsOSBMMTMuNSw5IEMxNC4zMjg0MjcxLDkgMTUsOS42NzE1NzI4OCAxNSwxMC41IEwxNSwxMy41IEMxNSwxNC4zMjg0MjcxIDE0LjMyODQyNzEsMTUgMTMuNSwxNSBMMTAuNSwxNSBDOS42NzE1NzI4OCwxNSA5LDE0LjMyODQyNzEgOSwxMy41IEw5LDEwLjUgWiBNMTAuNSwxMC41IEwxMC41LDEzLjUgTDEzLjUsMTMuNSBMMTMuNSwxMC41IEwxMC41LDEwLjUgWiBNMTcsMTAuNSBDMTcsOS42NzE1NzI4OCAxNy42NzE1NzI5LDkgMTguNSw5IEwyMS41LDkgQzIyLjMyODQyNzEsOSAyMyw5LjY3MTU3Mjg4IDIzLDEwLjUgTDIzLDEzLjUgQzIzLDE0LjMyODQyNzEgMjIuMzI4NDI3MSwxNSAyMS41LDE1IEwxOC41LDE1IEMxNy42NzE1NzI5LDE1IDE3LDE0LjMyODQyNzEgMTcsMTMuNSBMMTcsMTAuNSBaIE0xOC41LDEwLjUgTDE4LjUsMTMuNSBMMjEuNSwxMy41IEwyMS41LDEwLjUgTDE4LjUsMTAuNSBaIE05LDE4LjUgQzksMTcuNjcxNTcyOSA5LjY3MTU3Mjg4LDE3IDEwLjUsMTcgTDEzLjUsMTcgQzE0LjMyODQyNzEsMTcgMTUsMTcuNjcxNTcyOSAxNSwxOC41IEwxNSwyMS41IEMxNSwyMi4zMjg0MjcxIDE0LjMyODQyNzEsMjMgMTMuNSwyMyBMMTAuNSwyMyBDOS42NzE1NzI4OCwyMyA5LDIyLjMyODQyNzEgOSwyMS41IEw5LDE4LjUgWiBNMTAuNSwxOC41IEwxMC41LDIxLjUgTDEzLjUsMjEuNSBMMTMuNSwxOC41IEwxMC41LDE4LjUgWiBNMTcsMTguNSBDMTcsMTcuNjcxNTcyOSAxNy42NzE1NzI5LDE3IDE4LjUsMTcgTDIxLjUsMTcgQzIyLjMyODQyNzEsMTcgMjMsMTcuNjcxNTcyOSAyMywxOC41IEwyMywyMS41IEMyMywyMi4zMjg0MjcxIDIyLjMyODQyNzEsMjMgMjEuNSwyMyBMMTguNSwyMyBDMTcuNjcxNTcyOSwyMyAxNywyMi4zMjg0MjcxIDE3LDIxLjUgTDE3LDE4LjUgWiBNMTguNSwxOC41IEwxOC41LDIxLjUgTDIxLjUsMjEuNSBMMjEuNSwxOC41IEwxOC41LDE4LjUgWiIgaWQ9IkNvbWJpbmVkLVNoYXBlIiBmaWxsPSIjMEVDRjg4IiBmaWxsLXJ1bGU9Im5vbnplcm8iPjwvcGF0aD4KICAgIDwvZz4KPC9zdmc+');
+
+            height: 72px;
+            line-height:72px;
+        }
+
+        #courses{
+            margin-left: 50px;
+            width: 60%;
+            background-color: yellow;
+        }
+
+        #rightPart{
+            background-color: lightblue;
+            display: flex;
+            justify-content: space-around;
+        }
+        #percentage{
+            text-align: right;
+            background-color: yellow;
+            width: 20%;
+        }
+
+        #logo{
+            margin-left: 10%;
+        }
+        span{
+            display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="wholePage">
+        <aside id="dashboard">
+            <img id="logo" src="https://prism.knowledgehut.com/KHUpgradBrandLogoNew.f09bf77.svg" alt="">
+            <ul id="menu">
+                <li><span>Dashboard</span></li>
+                <li><span>Sessions</span></li>
+                <li><span>Courses</span></li>
+            </ul>
+        </aside>
+        <section id="rightPart">
+            <div id="courses">
+                <p>Courses</p>
+                <p>Full Stack Development Bootcamp - JavaScript</p>
+                <ul id="courseCompletion">
+                    <li>5 milestones</li>
+                    <li>Beginner-Intermediate</li>
+                </ul>
+            </div>
+            <div id="percentage">
+                <h1>22%</h1>
+                <p>view all courses</p>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Bar</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+
+        label {
+            font-family: sans-serif;
+            margin-right: 10px;
+        }
+
+        progress {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 50%;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Chrome, safari, edge */
+        progress[value]::-webkit-progress-bar {
+            background-color: rgb(216, 102, 26);
+        }
+
+        progress[value]::-webkit-progress-value {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-image: linear-gradient(44deg, #f00808 25%, #000000 25%, #000000 50%, #f00808 50%, #f00808 75%, #000000 75%, #000000 100%);
+            background-size: 57.58px 55.61px;
+        }
+
+        /* For firefox */
+        progress[value]::-moz-progress-bar {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-image: linear-gradient(44deg, #f00808 25%, #000000 25%, #000000 50%, #f00808 50%, #f00808 75%, #000000 75%, #000000 100%);
+            background-size: 57.58px 55.61px;
+        }
+    </style>
+</head>
+
+<body>
+    <label for="course_progress">Course Progress:</label>
+    <progress id="course_progress" max="100" value="40"></progress>
+</body>
+
+</html>
